@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>iSecure — Coffre Web</title>
+<!-- Import map: resolve @noble/hashes to a CDN so ov36.js runs unbundled in the browser
+     (the same ov36.js also runs in Node via node_modules). -->
+<script type="importmap">
+{
+  "imports": {
+    "@noble/hashes/sha3.js": "https://esm.sh/@noble/hashes@2/sha3.js",
+    "@noble/hashes/sha2.js": "https://esm.sh/@noble/hashes@2/sha2.js",
+    "@noble/hashes/hmac.js": "https://esm.sh/@noble/hashes@2/hmac.js"
+  }
+}
+</script>
+<style>
+  :root { --bg:#0e1621; --panel:#17212b; --panel2:#1d2b39; --accent:#5ea9dd; --in:#182533; --out:#2b5278; --text:#e9edf0; --muted:#7a8a99; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--text); height:100vh; display:flex; }
+  #sidebar { width:320px; background:var(--panel); border-right:1px solid #0a1119; display:flex; flex-direction:column; }
+  #sidebar h1 { font-size:17px; margin:0; padding:16px; border-bottom:1px solid #0a1119; display:flex; align-items:center; gap:8px; }
+  #sidebar h1 .lock { color:var(--accent); }
+  #load { padding:12px; border-bottom:1px solid #0a1119; }
+  #load input[type=file] { display:none; }
+  .btn { display:inline-block; background:var(--out); color:#fff; border:none; padding:9px 14px; border-radius:8px; cursor:pointer; font-size:13px; }
+  .btn.sec { background:var(--panel2); }
+  #contacts { flex:1; overflow:auto; }
+  .contact { padding:12px 16px; cursor:pointer; border-bottom:1px solid #0a1119; display:flex; gap:12px; align-items:center; }
+  .contact:hover, .contact.active { background:var(--panel2); }
+  .avatar { width:44px; height:44px; border-radius:50%; background:var(--out); display:flex; align-items:center; justify-content:center; font-weight:600; flex-shrink:0; }
+  .contact .meta { overflow:hidden; }
+  .contact .name { font-weight:600; font-size:14px; }
+  .contact .last { color:var(--muted); font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  #chat { flex:1; display:flex; flex-direction:column; }
+  #chat-head { padding:14px 20px; background:var(--panel); border-bottom:1px solid #0a1119; font-weight:600; }
+  #messages { flex:1; overflow:auto; padding:20px; display:flex; flex-direction:column; gap:8px; }
+  .msg { max-width:70%; padding:8px 12px; border-radius:12px; font-size:14px; line-height:1.35; word-break:break-word; }
+  .msg.in { background:var(--in); align-self:flex-start; border-bottom-left-radius:3px; }
+  .msg.out { background:var(--out); align-self:flex-end; border-bottom-right-radius:3px; }
+  .msg.err { background:#3a1f24; color:#e88; align-self:flex-start; font-family:monospace; font-size:12px; }
+  .empty { color:var(--muted); text-align:center; margin:auto; padding:40px; }
+  .hint { color:var(--muted); font-size:11px; margin-top:8px; line-height:1.4; }
+</style>
+</head>
+<body>
+  <div id="sidebar">
+    <h1><span class="lock">🔒</span> iSecure — Coffre</h1>
+    <div id="load">
+      <label class="btn" for="file">Charger une archive…</label>
+      <input type="file" id="file" accept="application/json,.json" />
+      <button class="btn sec" id="demo">Démo (coller)</button>
+      <div class="hint">Archive chiffrée exportée depuis l'app mobile (vos contacts, clés, messages). Déchiffrement local — rien n'est envoyé.</div>
+    </div>
+    <div id="contacts"><div class="empty">Aucune archive chargée.</div></div>
+  </div>
+  <div id="chat">
+    <div id="chat-head">Sélectionnez une conversation</div>
+    <div id="messages"><div class="empty">Chargez votre archive pour voir vos conversations déchiffrées.</div></div>
+  </div>
+
+  <script type="module">
+    import { decode } from './ov36.js';
+
+    let archive = null, active = null;
+
+    const $ = (id) => document.getElementById(id);
+    const initials = (n) => (n || '?').split(/\s+/).map(w => w[0]).slice(0, 2).join('').toUpperCase();
+
+    function renderContacts() {
+      const el = $('contacts');
+      if (!archive?.contacts?.length) { el.innerHTML = '<div class="empty">Archive vide.</div>'; return; }
+      el.innerHTML = '';
+      archive.contacts.forEach((c, i) => {
+        const last = (c.messages && c.messages.length) ? tryDecode(c, c.messages[c.messages.length - 1]).text : '';
+        const div = document.createElement('div');
+        div.className = 'contact' + (i === active ? ' active' : '');
+        div.innerHTML = `<div class="avatar">${initials(c.name)}</div>
+          <div class="meta"><div class="name">${escapeHtml(c.name || c.phone)}</div>
+          <div class="last">${escapeHtml(last).slice(0, 60)}</div></div>`;
+        div.onclick = () => { active = i; renderContacts(); renderChat(); };
+        el.appendChild(div);
+      });
+    }
+
+    function tryDecode(contact, m) {
+      if (!m.body?.startsWith('OV36:')) return { text: m.body ?? '', ok: true };
+      try { return { text: decode(m.body, contact.contactKey).plaintext, ok: true }; }
+      catch (e) { return { text: '⚠ ' + e.message, ok: false }; }
+    }
+
+    function renderChat() {
+      const c = archive.contacts[active];
+      $('chat-head').textContent = c.name || c.phone;
+      const el = $('messages'); el.innerHTML = '';
+      (c.messages || []).forEach(m => {
+        const d = tryDecode(c, m);
+        const div = document.createElement('div');
+        div.className = 'msg ' + (!d.ok ? 'err' : (m.dir === 'out' ? 'out' : 'in'));
+        div.textContent = d.text;
+        el.appendChild(div);
+      });
+      el.scrollTop = el.scrollHeight;
+    }
+
+    function escapeHtml(s) { return String(s).replace(/[&<>"]/g, x => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[x])); }
+
+    function loadArchive(obj) { archive = obj; active = obj.contacts?.length ? 0 : null; renderContacts(); if (active != null) renderChat(); }
+
+    $('file').addEventListener('change', async (e) => {
+      const f = e.target.files[0]; if (!f) return;
+      try { loadArchive(JSON.parse(await f.text())); }
+      catch (err) { alert('Archive illisible: ' + err.message); }
+    });
+
+    $('demo').addEventListener('click', () => {
+      const ck = prompt('contactKey (slot4, synchronisée depuis le mobile) :');
+      if (!ck) return;
+      const raw = prompt('Messages OV36 (un par ligne) :');
+      if (!raw) return;
+      loadArchive({ contacts: [{ name: 'Démo', phone: '', contactKey: ck.trim(), messages: raw.split('\n').filter(Boolean).map(b => ({ dir: 'in', body: b.trim() })) }] });
+    });
+  </script>
+</body>
+</html>
