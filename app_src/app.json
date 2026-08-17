@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "iSecure",
+    "slug": "ov-message",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon_ov.webp",
+    "scheme": "ovmessage",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#111B2E",
+      "resizeMode": "contain"
+    },
+    "android": {
+      "package": "com.ov.message",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon_ov.webp",
+        "backgroundColor": "#111B2E"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.ov.message",
+      "supportsTablet": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon_ov.webp",
+          "color": "#ffffff",
+          "mode": "production"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

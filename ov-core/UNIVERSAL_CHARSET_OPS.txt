@@ -1,0 +1,224 @@
+==> 0000000f: <LoadConstInt>: <Reg8: 2, Imm32: 1425>
+==> 00000015: <LoadConstInt>: <Reg8: 1, Imm32: 1479>
+==> 00000021: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 78916>  # String: 'azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN0123456789@#%&-+()*":;!?.,_=/[]{}<>$€£¥¢₽₹₺₴₸₿₭₮₯₰₱₲₳₵₶₷₻₼฿\'¡¿‘’“”π¶℅×÷~|•√∆°^\\©®™§µ¨´`…«»–—‚„‛‟‐‑‒―·‣‥àâæáäãåāéèêëęėēùûüúūîïìíįīçćčôœöòóõøōÿÀÂÆÁÄÃÅĀÉÈÊËĘĖĒÙÛÜÚŪÎÏÌÍĮĪÇĆČÔŒÖÒÓÕØŌŸÐÑÝÞßðñýþŴŵŶŷ \n\t\xa0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000ğĞıİşŞăĂșȘțȚőŐűŰďĎěĚňŇřŘšŠťŤůŮžŽĺĹľĽŕŔđĐģĢķĶļĻņŅċĊġĠħĦżŻąĄłŁńŃśŚźŹųŲơƠưƯĩĨũŨảẢạẠắẮằẰẳẲẵẴặẶấẤầẦẩẨẫẪậẬẻẺẽẼẹẸếẾềỀểỂễỄệỆỉỈịỊỏỎọỌốỐồỒổỔỗỖộỘớỚờỜởỞỡỠợỢủỦụỤứỨừỪửỬữỮựỰỳỲỷỶỹỸỵỴαβγδεζηθικλμνξορςστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩάέήίόύώΆΈΉΊΌΎΏϊϋΪΫΐΰАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЁабвгдежзийклмнопрстуфхцчшщъыьэюяёҐґЄєІіЇїЎўЂђЈјЉљЊњЋћЏџЃѓЌќЅѕ' (String)
+==> 0000002b: <LoadConstInt>: <Reg8: 6, Imm32: 1488>
+==> 00000031: <LoadConstInt>: <Reg8: 1, Imm32: 1514>
+==> 00000041: <LoadConstInt>: <Reg8: 6, Imm32: 1519>
+==> 00000047: <LoadConstInt>: <Reg8: 1, Imm32: 1524>
+==> 00000057: <LoadConstInt>: <Reg8: 6, Imm32: 1536>
+==> 0000005d: <LoadConstInt>: <Reg8: 1, Imm32: 1791>
+==> 0000006d: <LoadConstInt>: <Reg8: 6, Imm32: 1872>
+==> 00000073: <LoadConstInt>: <Reg8: 1, Imm32: 1919>
+==> 00000083: <LoadConstInt>: <Reg8: 6, Imm32: 2160>
+==> 00000089: <LoadConstInt>: <Reg8: 1, Imm32: 2193>
+==> 00000099: <LoadConstInt>: <Reg8: 6, Imm32: 2199>
+==> 0000009f: <LoadConstInt>: <Reg8: 1, Imm32: 2207>
+==> 000000af: <LoadConstInt>: <Reg8: 6, Imm32: 2208>
+==> 000000b5: <LoadConstInt>: <Reg8: 1, Imm32: 2303>
+==> 000000c5: <LoadConstInt>: <Reg8: 2, Imm32: 4608>
+==> 000000cb: <LoadConstInt>: <Reg8: 1, Imm32: 4680>
+==> 000000d7: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 81247>  # String: 'აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰჱჲჳჴჵ' (String)
+==> 000000e1: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80424>  # String: 'ԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿ' (String)
+==> 000000eb: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80425>  # String: 'ՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎ' (String)
+==> 000000f5: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80426>  # String: 'ՏՐՑՒՓՔՕՖ' (String)
+==> 000000ff: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80427>  # String: 'աբգդեզէըթժիլխծկ' (String)
+==> 00000109: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80428>  # String: 'հձղճմյնշոչպջռսվ' (String)
+==> 00000113: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80429>  # String: 'տրցւփքօֆ' (String)
+==> 0000011d: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 79009>  # String: 'ɓɗƙƁƊƘ' (String)
+==> 00000127: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 82099>  # String: 'ṣṢ' (String)
+==> 00000131: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80422>  # String: 'ӘәҒғҚқҢңӨөҰұҮүҺһ' (String)
+==> 0000013b: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80367>  # String: 'əƏ' (String)
+==> 00000145: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80423>  # String: 'ӢӣӮӯҲҳҶҷ' (String)
+==> 00000153: <LoadConstInt>: <Reg8: 6, Imm32: 4682>
+==> 00000159: <LoadConstInt>: <Reg8: 1, Imm32: 4685>
+==> 00000169: <LoadConstInt>: <Reg8: 6, Imm32: 4688>
+==> 0000016f: <LoadConstInt>: <Reg8: 1, Imm32: 4694>
+==> 0000017f: <LoadConstInt>: <Reg8: 2, Imm32: 4698>
+==> 00000185: <LoadConstInt>: <Reg8: 1, Imm32: 4701>
+==> 00000191: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 81609>  # String: 'ቘ' (String)
+==> 0000019f: <LoadConstInt>: <Reg8: 6, Imm32: 4704>
+==> 000001a5: <LoadConstInt>: <Reg8: 1, Imm32: 4744>
+==> 000001b5: <LoadConstInt>: <Reg8: 6, Imm32: 4746>
+==> 000001bb: <LoadConstInt>: <Reg8: 1, Imm32: 4749>
+==> 000001cb: <LoadConstInt>: <Reg8: 6, Imm32: 4752>
+==> 000001d1: <LoadConstInt>: <Reg8: 1, Imm32: 4784>
+==> 000001e1: <LoadConstInt>: <Reg8: 6, Imm32: 4786>
+==> 000001e7: <LoadConstInt>: <Reg8: 1, Imm32: 4789>
+==> 000001f7: <LoadConstInt>: <Reg8: 6, Imm32: 4792>
+==> 000001fd: <LoadConstInt>: <Reg8: 1, Imm32: 4798>
+==> 0000020d: <LoadConstInt>: <Reg8: 2, Imm32: 4802>
+==> 00000213: <LoadConstInt>: <Reg8: 1, Imm32: 4805>
+==> 0000021f: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 81808>  # String: 'ዀ' (String)
+==> 0000022d: <LoadConstInt>: <Reg8: 6, Imm32: 4808>
+==> 00000233: <LoadConstInt>: <Reg8: 1, Imm32: 4822>
+==> 00000243: <LoadConstInt>: <Reg8: 6, Imm32: 4824>
+==> 00000249: <LoadConstInt>: <Reg8: 1, Imm32: 4880>
+==> 00000259: <LoadConstInt>: <Reg8: 6, Imm32: 4882>
+==> 0000025f: <LoadConstInt>: <Reg8: 1, Imm32: 4885>
+==> 0000026f: <LoadConstInt>: <Reg8: 6, Imm32: 4888>
+==> 00000275: <LoadConstInt>: <Reg8: 1, Imm32: 4954>
+==> 00000285: <LoadConstInt>: <Reg8: 6, Imm32: 4969>
+==> 0000028b: <LoadConstInt>: <Reg8: 1, Imm32: 4988>
+==> 0000029b: <LoadConstInt>: <Reg8: 6, Imm32: 11568>
+==> 000002a1: <LoadConstInt>: <Reg8: 1, Imm32: 11623>
+==> 000002b1: <LoadConstInt>: <Reg8: 6, Imm32: 3585>
+==> 000002b7: <LoadConstInt>: <Reg8: 1, Imm32: 3642>
+==> 000002c7: <LoadConstInt>: <Reg8: 6, Imm32: 3648>
+==> 000002cd: <LoadConstInt>: <Reg8: 1, Imm32: 3673>
+==> 000002dd: <LoadConstInt>: <Reg8: 6, Imm32: 3713>
+==> 000002e3: <LoadConstInt>: <Reg8: 1, Imm32: 3714>
+==> 000002f3: <LoadConstInt>: <Reg8: 2, Imm32: 3718>
+==> 000002f9: <LoadConstInt>: <Reg8: 1, Imm32: 3722>
+==> 00000305: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 81244>  # String: 'ຄ' (String)
+==> 00000313: <LoadConstInt>: <Reg8: 6, Imm32: 3724>
+==> 00000319: <LoadConstInt>: <Reg8: 1, Imm32: 3747>
+==> 00000329: <LoadConstInt>: <Reg8: 2, Imm32: 3751>
+==> 0000032f: <LoadConstInt>: <Reg8: 1, Imm32: 3773>
+==> 0000033b: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 81245>  # String: 'ລ' (String)
+==> 00000349: <LoadConstInt>: <Reg8: 6, Imm32: 3776>
+==> 0000034f: <LoadConstInt>: <Reg8: 1, Imm32: 3780>
+==> 0000035f: <LoadConstInt>: <Reg8: 2, Imm32: 3784>
+==> 00000365: <LoadConstInt>: <Reg8: 1, Imm32: 3789>
+==> 00000371: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 81246>  # String: 'ໆ' (String)
+==> 0000037f: <LoadConstInt>: <Reg8: 6, Imm32: 4096>
+==> 00000385: <LoadConstInt>: <Reg8: 1, Imm32: 4175>
+==> 00000395: <LoadConstInt>: <Reg8: 2, Imm32: 43648>
+==> 0000039b: <LoadConstInt>: <Reg8: 1, Imm32: 43714>
+==> 000003a7: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 82097>  # String: 'ḑ' (String)
+==> 000003b1: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 79758>  # String: '፡።፣፦' (String)
+==> 000003bb: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 79283>  # String: '̀́ǹ' (String)
+==> 000003c5: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 82236>  # String: '\u200c\u200d' (String)
+==> 000003cf: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 86421>  # String: 'ﷲ¬¦' (String)
+==> 000003d9: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 79314>  # String: '₫' (String)
+==> 000003e3: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 82280>  # String: '₨' (String)
+==> 000003ed: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 82278>  # String: '₦' (String)
+==> 000003f7: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 82282>  # String: '₪' (String)
+==> 00000401: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 86422>  # String: '﷼' (String)
+==> 0000040f: <LoadConstInt>: <Reg8: 6, Imm32: 43739>
+==> 00000415: <LoadConstInt>: <Reg8: 1, Imm32: 43743>
+==> 00000425: <LoadConstInt>: <Reg8: 2, Imm32: 2304>
+==> 0000042b: <LoadConstInt>: <Reg8: 1, Imm32: 2431>
+==> 00000437: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80090>  # String: '±²³½¼¾' (String)
+==> 00000441: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 82256>  # String: '‰′″' (String)
+==> 0000044b: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 82257>  # String: '‹›' (String)
+==> 00000455: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 82284>  # String: '№℃℉℗' (String)
+==> 0000045f: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80091>  # String: '¹' (String)
+==> 00000469: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80421>  # String: 'Җҗ' (String)
+==> 00000473: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80353>  # String: 'ĉĝĥĵŝŭĈĜĤĴŜŬ' (String)
+==> 0000047d: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 82098>  # String: 'ṅṄ' (String)
+==> 00000487: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80368>  # String: 'ɛɔɲŋƐƆƝŊ' (String)
+==> 00000491: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80383>  # String: '̂' (String)
+==> 0000049b: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80384>  # String: '̃' (String)
+==> 000004a5: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80385>  # String: '̄' (String)
+==> 000004af: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80387>  # String: '̆' (String)
+==> 000004b9: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80388>  # String: '̇' (String)
+==> 000004c3: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80389>  # String: '̈' (String)
+==> 000004cd: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80391>  # String: '̊' (String)
+==> 000004d7: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80393>  # String: '̌' (String)
+==> 000004e1: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80394>  # String: '̓' (String)
+==> 000004eb: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80395>  # String: '̔' (String)
+==> 000004f5: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80406>  # String: '͂' (String)
+==> 000004ff: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80407>  # String: '̓' (String)
+==> 00000509: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80408>  # String: '̈́' (String)
+==> 00000513: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 80409>  # String: 'ͅ' (String)
+==> 0000051d: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 83341>  # String: '✓' (String)
+==> 0000052b: <LoadConstInt>: <Reg8: 6, Imm32: 2432>
+==> 00000531: <LoadConstInt>: <Reg8: 1, Imm32: 2559>
+==> 00000541: <LoadConstInt>: <Reg8: 6, Imm32: 2560>
+==> 00000547: <LoadConstInt>: <Reg8: 1, Imm32: 2687>
+==> 00000557: <LoadConstInt>: <Reg8: 6, Imm32: 2688>
+==> 0000055d: <LoadConstInt>: <Reg8: 1, Imm32: 2815>
+==> 0000056d: <LoadConstInt>: <Reg8: 6, Imm32: 2816>
+==> 00000573: <LoadConstInt>: <Reg8: 1, Imm32: 2943>
+==> 00000583: <LoadConstInt>: <Reg8: 6, Imm32: 2944>
+==> 00000589: <LoadConstInt>: <Reg8: 1, Imm32: 3071>
+==> 00000599: <LoadConstInt>: <Reg8: 6, Imm32: 3072>
+==> 0000059f: <LoadConstInt>: <Reg8: 1, Imm32: 3199>
+==> 000005af: <LoadConstInt>: <Reg8: 6, Imm32: 3200>
+==> 000005b5: <LoadConstInt>: <Reg8: 1, Imm32: 3327>
+==> 000005c5: <LoadConstInt>: <Reg8: 6, Imm32: 3328>
+==> 000005cb: <LoadConstInt>: <Reg8: 1, Imm32: 3455>
+==> 000005db: <LoadConstInt>: <Reg8: 6, Imm32: 3456>
+==> 000005e1: <LoadConstInt>: <Reg8: 1, Imm32: 3583>
+==> 000005f1: <LoadConstInt>: <Reg8: 6, Imm32: 6016>
+==> 000005f7: <LoadConstInt>: <Reg8: 1, Imm32: 6143>
+==> 00000607: <LoadConstInt>: <Reg8: 6, Imm32: 3840>
+==> 0000060d: <LoadConstInt>: <Reg8: 1, Imm32: 4095>
+==> 0000061d: <LoadConstInt>: <Reg8: 6, Imm32: 8528>
+==> 00000623: <LoadConstInt>: <Reg8: 1, Imm32: 8587>
+==> 00000633: <LoadConstInt>: <Reg8: 6, Imm32: 7680>
+==> 00000639: <LoadConstInt>: <Reg8: 1, Imm32: 7935>
+==> 00000649: <LoadConstInt>: <Reg8: 6, Imm32: 1280>
+==> 0000064f: <LoadConstInt>: <Reg8: 1, Imm32: 1327>
+==> 0000065f: <LoadConstInt>: <Reg8: 6, Imm32: 8208>
+==> 00000665: <LoadConstInt>: <Reg8: 1, Imm32: 8303>
+==> 00000675: <LoadConstInt>: <Reg8: 6, Imm32: 8352>
+==> 0000067b: <LoadConstInt>: <Reg8: 1, Imm32: 8399>
+==> 0000068b: <LoadConstInt>: <Reg8: 6, Imm32: 8304>
+==> 00000691: <LoadConstInt>: <Reg8: 1, Imm32: 8351>
+==> 000006a1: <LoadConstInt>: <Reg8: 6, Imm32: 8448>
+==> 000006a7: <LoadConstInt>: <Reg8: 1, Imm32: 8527>
+==> 000006b7: <LoadConstInt>: <Reg8: 6, Imm32: 1984>
+==> 000006bd: <LoadConstInt>: <Reg8: 1, Imm32: 2047>
+==> 000006cd: <LoadConstInt>: <Reg8: 6, Imm32: 43392>
+==> 000006d3: <LoadConstInt>: <Reg8: 1, Imm32: 43487>
+==> 000006e3: <LoadConstInt>: <Reg8: 6, Imm32: 7040>
+==> 000006e9: <LoadConstInt>: <Reg8: 1, Imm32: 7103>
+==> 000006f9: <LoadConstInt>: <Reg8: 6, Imm32: 7248>
+==> 000006ff: <LoadConstInt>: <Reg8: 1, Imm32: 7295>
+==> 0000072b: <LoadConstString>: <Reg8: 0, string_id: 34322>  # String: '' (Identifier)
+==> 0000072f: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80365>  # String: 'Ŧŧ' (String)
+==> 00000739: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82273>  # String: '₡' (String)
+==> 00000743: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82281>  # String: '₩' (String)
+==> 0000074d: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82283>  # String: '₾' (String)
+==> 00000757: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82272>  # String: '₠' (String)
+==> 00000761: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82274>  # String: '₢' (String)
+==> 0000076b: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82275>  # String: '₣' (String)
+==> 00000775: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82276>  # String: '₤' (String)
+==> 0000077f: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82277>  # String: '₥' (String)
+==> 00000789: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82279>  # String: '₧' (String)
+==> 00000793: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82237>  # String: '†' (String)
+==> 0000079d: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82238>  # String: '‡' (String)
+==> 000007a7: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82258>  # String: '⁄' (String)
+==> 000007b1: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80371>  # String: 'ʻ' (String)
+==> 000007bb: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80372>  # String: 'ʼ' (String)
+==> 000007c5: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82259>  # String: '⁰' (String)
+==> 000007cf: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82260>  # String: '⁴' (String)
+==> 000007d9: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82261>  # String: '⁵' (String)
+==> 000007e3: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82262>  # String: '⁶' (String)
+==> 000007ed: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82263>  # String: '⁷' (String)
+==> 000007f7: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82264>  # String: '⁸' (String)
+==> 00000801: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82265>  # String: '⁹' (String)
+==> 0000080b: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82266>  # String: '⁺' (String)
+==> 00000815: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82267>  # String: '⁻' (String)
+==> 0000081f: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82268>  # String: '⁼' (String)
+==> 00000829: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82269>  # String: '⁽' (String)
+==> 00000833: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82270>  # String: '⁾' (String)
+==> 0000083d: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 82271>  # String: 'ⁿ' (String)
+==> 00000847: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80404>  # String: '̶' (String)
+==> 00000851: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80390>  # String: '̉' (String)
+==> 0000085b: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80392>  # String: '̋' (String)
+==> 00000865: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80396>  # String: '̛' (String)
+==> 0000086f: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80397>  # String: '̣' (String)
+==> 00000879: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80398>  # String: '̦' (String)
+==> 00000883: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 78928>  # String: '̧' (String)
+==> 0000088d: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80399>  # String: '̨' (String)
+==> 00000897: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80400>  # String: '̱' (String)
+==> 000008a1: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80386>  # String: '̅' (String)
+==> 000008ab: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80401>  # String: '̲' (String)
+==> 000008b5: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80402>  # String: '̳' (String)
+==> 000008bf: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80405>  # String: '̸' (String)
+==> 000008c9: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80403>  # String: '̵' (String)
+==> 000008d3: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80369>  # String: 'ʹ' (String)
+==> 000008dd: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80370>  # String: 'ʺ' (String)
+==> 000008e7: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80373>  # String: 'ʾ' (String)
+==> 000008f1: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80374>  # String: 'ʿ' (String)
+==> 000008fb: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80375>  # String: 'ˆ' (String)
+==> 00000905: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80376>  # String: 'ˇ' (String)
+==> 0000090f: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80377>  # String: '˘' (String)
+==> 00000919: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80378>  # String: '˙' (String)
+==> 00000923: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80379>  # String: '˚' (String)
+==> 0000092d: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80380>  # String: '˛' (String)
+==> 00000937: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80381>  # String: '˜' (String)
+==> 00000941: <LoadConstStringLongIndex>: <Reg8: 6, string_id: 80382>  # String: '˝' (String)
+==> 0000094b: <LoadConstString>: <Reg8: 6, string_id: 27293>  # String: 'ƒ' (String)

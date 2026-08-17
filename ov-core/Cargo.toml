@@ -1,0 +1,53 @@
+[package]
+name = "ov-core"
+version = "0.1.0"
+edition = "2021"
+description = "OV Message cryptographic + protocol core — audited RustCrypto primitives, no homemade algorithms."
+
+[lib]
+name = "ov_core"
+# cdylib -> Android/iOS .so/.dylib via cargo-ndk; staticlib -> iOS xcframework; rlib -> host tests
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+itertools = "0.13"
+rayon = "1.10.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# AEAD
+aes-gcm = "0.10"
+# Classical ECDH
+x25519-dalek = { version = "2", features = ["static_secrets"] }
+# Post-quantum KEM (RustCrypto)
+ml-kem = "0.2"
+# Password hashing
+argon2 = "0.5"
+# KDF / hashing / MAC
+hkdf = "0.12"
+sha2 = "0.10"
+sha3 = "0.10"
+hmac = "0.12"
+# RNG
+rand_core = { version = "0.6", features = ["getrandom"] }
+getrandom = "0.2"
+# Encoding + hygiene
+hex = "0.4"
+base64 = "0.22"
+zeroize = { version = "1", features = ["derive"] }
+thiserror = "1"
+
+# UniFFI (mobile bindings). scaffolding gated so host `cargo test` stays light.
+uniffi = { version = "0.28", optional = true }
+
+[features]
+default = []
+ffi = ["uniffi"]
+# binding generator CLI (used to emit the Kotlin/Swift glue)
+cli = ["uniffi/cli"]
+
+# Standalone binary to generate language bindings from the built library.
+[[bin]]
+name = "uniffi-bindgen"
+required-features = ["cli"]
+
+[dev-dependencies]
