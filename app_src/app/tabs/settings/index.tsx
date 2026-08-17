@@ -12,6 +12,7 @@ import { SettingsRow, SettingsSectionHeader, SettingsGroup } from '@/components/
 import { GlassBackground } from '@/components/ui/Glass';
 import { SlideToConfirm } from '@/components/ui/SlideToConfirm';
 import { getSetting, setSetting, deleteAllData } from '@/lib/database/db';
+import { exportArchive } from '@/lib/archive';
 import * as SecureStore from 'expo-secure-store';
 import { OvCore, Sms } from '@/lib/native/ovcore';
 
@@ -249,6 +250,12 @@ export default function SettingsScreen() {
             subtitle="Chiffrer du texte pour n'importe quelle plateforme" />
           <SettingsRow icon="document-text-outline" label="Notes chiffrées" type="arrow"
             onPress={() => router.push('/modals/notes')} />
+          <SettingsRow icon="cloud-upload-outline" label="Exporter mes conversations" type="arrow"
+            subtitle="Archive (contacts, clés, messages) pour le coffre web"
+            onPress={async () => {
+              try { await exportArchive(); }
+              catch (e: any) { Alert.alert('Export', e?.message ?? 'Échec de l\'export.'); }
+            }} />
         </SettingsGroup>
 
         {/* ASSISTANCE */}
