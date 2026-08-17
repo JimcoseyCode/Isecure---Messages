@@ -1,0 +1,6 @@
+.class public abstract LI4/s;
+.super Landroid/os/Binder;
+.source "r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68"
+
+# interfaces
+.implements Landroid/os/IInterface;

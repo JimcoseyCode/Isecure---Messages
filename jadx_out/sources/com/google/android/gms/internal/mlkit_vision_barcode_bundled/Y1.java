@@ -1,0 +1,13 @@
+package com.google.android.gms.internal.mlkit_vision_barcode_bundled;
+
+/* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+/* JADX INFO: loaded from: classes.dex */
+final class Y1 extends W1 {
+    Y1() {
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_barcode_bundled.W1
+    final void a(Object obj) {
+        ((P0) obj).zzc.h();
+    }
+}

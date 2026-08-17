@@ -1,0 +1,59 @@
+
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-dec"
+version = "0.1.7"
+authors = [
+    {name = "P1 Security - Marin Moulinier"},
+]
+description = """A tool for reverse engineering React Native \
+    bytecode files, including disassembly and decompilation \
+    facilities"""
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: JavaScript",
+    "Topic :: Software Development :: Disassemblers",
+    "Topic :: Security",
+    "Environment :: Console"
+]
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
+
+[dependency-groups]
+dev = [
+    "clang==18.1.8",
+    "pytest==9.0.3"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/P1sec/hermes-dec"
+Repository = "https://github.com/P1sec/hermes-dec"
+Issues = "https://github.com/P1sec/hermes-dec/issues"
+
+[project.scripts]
+hbc-decompiler = "hermes_dec.decompilation.hbc_decompiler:main"
+hbc-disassembler = "hermes_dec.disassembly.hbc_disassembler:main"
+hbc-file-parser = "hermes_dec.parsers.hbc_file_parser:main"
+hermes-dec-regen-pydefs = "hermes_dec.utils.regen_hbc_opcodes:main"
+hermes-dec-regen-pydefs-regexp = "hermes_dec.utils.regen_hbc_regex_parser:main"
+hermes-dec-regen-html = "hermes_dec.utils.hermes_bytecode_structs_table_gen:main"
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]

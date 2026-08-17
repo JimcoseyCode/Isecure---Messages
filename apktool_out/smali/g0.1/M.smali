@@ -1,0 +1,49 @@
+.class public final synthetic Lg0/M;
+.super Ljava/lang/Object;
+.source "r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68"
+
+# interfaces
+.implements Landroidx/concurrent/futures/c$c;
+
+
+# instance fields
+.field public final synthetic a:Lg0/I$e;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lg0/I$e;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lg0/M;->a:Lg0/I$e;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroidx/concurrent/futures/c$a;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lg0/M;->a:Lg0/I$e;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p1}, Lg0/I$e;->m(Lg0/I$e;Landroidx/concurrent/futures/c$a;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method

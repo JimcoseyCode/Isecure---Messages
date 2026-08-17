@@ -1,0 +1,22 @@
+package y;
+
+import androidx.lifecycle.AbstractC1776x;
+
+/* JADX INFO: renamed from: y.q, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+/* JADX INFO: loaded from: classes.dex */
+public interface InterfaceC3597q {
+    int a();
+
+    AbstractC1776x c();
+
+    int k();
+
+    String n();
+
+    int p(int i10);
+
+    boolean s();
+
+    AbstractC1776x y();
+}

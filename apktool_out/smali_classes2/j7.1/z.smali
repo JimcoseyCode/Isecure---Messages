@@ -1,0 +1,26 @@
+.class abstract Lj7/z;
+.super Lj7/y;
+.source "r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68"
+
+
+# direct methods
+.method public static S(Ljava/util/List;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "<this>"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p0}, Ljava/util/Collections;->reverse(Ljava/util/List;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method

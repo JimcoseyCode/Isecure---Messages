@@ -1,0 +1,31 @@
+==> 000000e1: <Call1>: <Reg8: 5, Reg8: 2, Reg8: 5>
+==> 000000e5: <LoadFromEnvironment>: <Reg8: 2, Reg8: 6, UInt8: 4>
+==> 000000e9: <Call2>: <Reg8: 2, Reg8: 2, Reg8: 4, Reg8: 5>
+==> 000000ee: <GetById>: <Reg8: 0, Reg8: 0, UInt8: 5, string_id: 56587>  # String: 'createHmac' (Identifier)
+==> 000000f4: <Call3>: <Reg8: 3, Reg8: 0, Reg8: 4, Reg8: 3, Reg8: 1>
+==> 000000fa: <GetByIdShort>: <Reg8: 1, Reg8: 3, UInt8: 3, string_id: 243>  # String: 'update' (Identifier)
+==> 000000ff: <LoadFromEnvironment>: <Reg8: 5, Reg8: 6, UInt8: 3>
+==> 00000103: <GetByIdShort>: <Reg8: 4, Reg8: 5, UInt8: 6, string_id: 93>  # String: 'concat' (Identifier)
+==> 00000108: <LoadFromEnvironment>: <Reg8: 8, Reg8: 6, UInt8: 3>
+==> 0000010c: <GetByIdShort>: <Reg8: 7, Reg8: 8, UInt8: 1, string_id: 100>  # String: 'from' (Identifier)
+==> 00000111: <LoadConstStringLongIndex>: <Reg8: 0, string_id: 76174>  # String: 'OV_PQHybrid_SAS_v1' (String)
+==> 00000117: <Call3>: <Reg8: 7, Reg8: 7, Reg8: 8, Reg8: 0, Reg8: 9>
+==> 0000011d: <NewArray>: <Reg8: 0, UInt16: 2>
+==> 00000121: <PutOwnByIndex>: <Reg8: 0, Reg8: 7, UInt8: 0>
+==> 00000125: <LoadFromEnvironment>: <Reg8: 8, Reg8: 6, UInt8: 3>
+==> 00000129: <GetByIdShort>: <Reg8: 7, Reg8: 8, UInt8: 1, string_id: 100>  # String: 'from' (Identifier)
+==> 0000012e: <NewArrayWithBuffer>: <Reg8: 6, UInt16: 1, UInt16: 1, UInt16: 19>  # Array: [1]
+==> 00000136: <Call2>: <Reg8: 6, Reg8: 7, Reg8: 8, Reg8: 6>
+==> 0000013b: <PutOwnByIndex>: <Reg8: 0, Reg8: 6, UInt8: 1>
+==> 0000013f: <Call2>: <Reg8: 0, Reg8: 4, Reg8: 5, Reg8: 0>
+==> 00000144: <Call2>: <Reg8: 1, Reg8: 1, Reg8: 3, Reg8: 0>
+==> 00000149: <GetById>: <Reg8: 0, Reg8: 1, UInt8: 4, string_id: 38421>  # String: 'digest' (Identifier)
+==> 0000014f: <Call1>: <Reg8: 4, Reg8: 0, Reg8: 1>
+==> 00000153: <GetByIdShort>: <Reg8: 3, Reg8: 4, UInt8: 7, string_id: 223>  # String: 'slice' (Identifier)
+==> 00000158: <LoadConstZero>: <Reg8: 1>
+==> 0000015a: <LoadConstUInt8>: <Reg8: 0, UInt8: 6>
+==> 0000015d: <Call3>: <Reg8: 3, Reg8: 3, Reg8: 4, Reg8: 1, Reg8: 0>
+==> 00000163: <GetByIdShort>: <Reg8: 1, Reg8: 3, UInt8: 8, string_id: 37>  # String: 'toString' (Identifier)
+==> 00000168: <LoadConstString>: <Reg8: 0, string_id: 48110>  # String: 'hex' (Identifier)
+==> 0000016c: <Call2>: <Reg8: 1, Reg8: 1, Reg8: 3, Reg8: 0>
+==> 00000171: <GetById>: <Reg8: 0, Reg8: 1, UInt8: 9, string_id: 41354>  # String: 'toUpperCase' (Identifier)

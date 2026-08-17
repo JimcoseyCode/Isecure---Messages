@@ -1,0 +1,9 @@
+package com.google.android.material.sidesheet;
+
+/* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+/* JADX INFO: loaded from: classes2.dex */
+abstract class d {
+    static boolean a(float f10, float f11) {
+        return Math.abs(f10) > Math.abs(f11);
+    }
+}

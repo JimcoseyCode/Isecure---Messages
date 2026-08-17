@@ -1,0 +1,68 @@
+.class final Lt9/g;
+.super Ljava/lang/Object;
+.source "r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68"
+
+# interfaces
+.implements Lt9/D;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public close()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public flush()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public timeout()Lt9/G;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lt9/G;->e:Lt9/G;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public write(Lt9/h;J)V
+    .locals 1
+
+    .line 1
+    const-string v0, "source"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p1, p2, p3}, Lt9/h;->skip(J)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method

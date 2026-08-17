@@ -1,0 +1,59 @@
+.class public final synthetic Lcom/swmansion/rnscreens/U;
+.super Ljava/lang/Object;
+.source "r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68"
+
+# interfaces
+.implements Landroid/view/View$OnApplyWindowInsetsListener;
+
+
+# instance fields
+.field public final synthetic a:Lcom/swmansion/rnscreens/A;
+
+.field public final synthetic b:Lcom/swmansion/rnscreens/X;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/swmansion/rnscreens/A;Lcom/swmansion/rnscreens/X;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/swmansion/rnscreens/U;->a:Lcom/swmansion/rnscreens/A;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lcom/swmansion/rnscreens/U;->b:Lcom/swmansion/rnscreens/X;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onApplyWindowInsets(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/swmansion/rnscreens/U;->a:Lcom/swmansion/rnscreens/A;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/swmansion/rnscreens/U;->b:Lcom/swmansion/rnscreens/X;
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1, p1, p2}, Lcom/swmansion/rnscreens/X;->L(Lcom/swmansion/rnscreens/A;Lcom/swmansion/rnscreens/X;Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    return-object p1
+.end method

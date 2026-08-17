@@ -1,0 +1,31 @@
+package com.facebook.imagepipeline.producers;
+
+import android.util.Pair;
+import g2.AbstractC2662a;
+
+/* JADX INFO: renamed from: com.facebook.imagepipeline.producers.h, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+/* JADX INFO: loaded from: classes.dex */
+public class C1972h extends U {
+
+    /* JADX INFO: renamed from: f, reason: collision with root package name */
+    private final W2.k f20089f;
+
+    public C1972h(W2.k kVar, d0 d0Var) {
+        super(d0Var, "BitmapMemoryCacheKeyMultiplexProducer", "multiplex_bmp_cnt");
+        this.f20089f = kVar;
+    }
+
+    @Override // com.facebook.imagepipeline.producers.U
+    /* JADX INFO: renamed from: l, reason: merged with bridge method [inline-methods] */
+    public AbstractC2662a g(AbstractC2662a abstractC2662a) {
+        return AbstractC2662a.r(abstractC2662a);
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // com.facebook.imagepipeline.producers.U
+    /* JADX INFO: renamed from: m, reason: merged with bridge method [inline-methods] */
+    public Pair j(e0 e0Var) {
+        return Pair.create(this.f20089f.a(e0Var.e(), e0Var.d()), e0Var.d0());
+    }
+}

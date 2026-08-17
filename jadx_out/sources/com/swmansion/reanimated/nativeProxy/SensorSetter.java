@@ -1,0 +1,20 @@
+package com.swmansion.reanimated.nativeProxy;
+
+import com.facebook.jni.HybridData;
+import q3.InterfaceC3112a;
+
+/* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+/* JADX INFO: loaded from: classes2.dex */
+@InterfaceC3112a
+public class SensorSetter {
+
+    @InterfaceC3112a
+    private final HybridData mHybridData;
+
+    @InterfaceC3112a
+    private SensorSetter(HybridData hybridData) {
+        this.mHybridData = hybridData;
+    }
+
+    public native void sensorSetter(float[] fArr, int i10);
+}

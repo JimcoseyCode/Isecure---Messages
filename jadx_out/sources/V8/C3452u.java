@@ -1,0 +1,17 @@
+package v8;
+
+import L7.g0;
+import kotlin.jvm.functions.Function1;
+
+/* JADX INFO: renamed from: v8.u, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes2.dex */
+class C3452u implements Function1 {
+
+    /* JADX INFO: renamed from: g, reason: collision with root package name */
+    public static final C3452u f33011g = new C3452u();
+
+    @Override // kotlin.jvm.functions.Function1
+    public Object invoke(Object obj) {
+        return x.o((g0) obj);
+    }
+}

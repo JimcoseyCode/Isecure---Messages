@@ -28,29 +28,5 @@ web-build/
 .claude/
 graphify-out/
 
-# Third-party decompiled OV Message (OVLabs proprietary) — NOT published on a public repo
-apktool_out/
-jadx_out/
-hermes-dec/
-
-# OV Message reverse-engineering artifacts (derived from OVLabs' app) — NOT public
-bundle_analysis.txt
-bundle_disassembled.txt
-decode_payload_dump.txt
-functions_dump.txt
-ov36_functions.txt
-hybrid_sas_context.txt
-result.txt
-tree.txt
-verify_context.txt
-contexte-claude-Isecure.txt
-HANDOFF_OVINTEROP.md
-decode_*.txt
-get_*.py
-get_decode_*.py
-parse_*.py
-parse_ovpk.js
-poc_key_recover.js
-test_algo*.py
-test_getSpecialCharSet.py
-*.idsig
+# NOTE: repo is PRIVATE — decompiled OV Message + RE artifacts are tracked as
+# private reference material (do NOT make this repo public with these present).

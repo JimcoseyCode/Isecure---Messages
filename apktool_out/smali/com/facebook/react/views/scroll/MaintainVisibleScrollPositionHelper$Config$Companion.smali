@@ -1,0 +1,137 @@
+.class public final Lcom/facebook/react/views/scroll/MaintainVisibleScrollPositionHelper$Config$Companion;
+.super Ljava/lang/Object;
+.source "r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/facebook/react/views/scroll/MaintainVisibleScrollPositionHelper$Config;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u0010\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0007\u00a8\u0006\u0008"
+    }
+    d2 = {
+        "Lcom/facebook/react/views/scroll/MaintainVisibleScrollPositionHelper$Config$Companion;",
+        "",
+        "<init>",
+        "()V",
+        "fromReadableMap",
+        "Lcom/facebook/react/views/scroll/MaintainVisibleScrollPositionHelper$Config;",
+        "value",
+        "Lcom/facebook/react/bridge/ReadableMap;",
+        "ReactAndroid_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/facebook/react/views/scroll/MaintainVisibleScrollPositionHelper$Config$Companion;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final fromReadableMap(Lcom/facebook/react/bridge/ReadableMap;)Lcom/facebook/react/views/scroll/MaintainVisibleScrollPositionHelper$Config;
+    .locals 3
+
+    .line 1
+    const-string v0, "value"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "minIndexForVisible"
+
+    .line 7
+    .line 8
+    invoke-interface {p1, v0}, Lcom/facebook/react/bridge/ReadableMap;->getInt(Ljava/lang/String;)I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    const-string v1, "autoscrollToTopThreshold"
+
+    .line 13
+    .line 14
+    invoke-interface {p1, v1}, Lcom/facebook/react/bridge/ReadableMap;->hasKey(Ljava/lang/String;)Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v2
+
+    .line 18
+    if-eqz v2, :cond_0
+
+    .line 19
+    .line 20
+    invoke-interface {p1, v1}, Lcom/facebook/react/bridge/ReadableMap;->getInt(Ljava/lang/String;)I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result p1
+
+    .line 24
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    goto :goto_0
+
+    .line 29
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 30
+    :goto_0
+    new-instance v1, Lcom/facebook/react/views/scroll/MaintainVisibleScrollPositionHelper$Config;
+
+    .line 31
+    .line 32
+    invoke-direct {v1, v0, p1}, Lcom/facebook/react/views/scroll/MaintainVisibleScrollPositionHelper$Config;-><init>(ILjava/lang/Integer;)V
+
+    .line 33
+    .line 34
+    .line 35
+    return-object v1
+.end method

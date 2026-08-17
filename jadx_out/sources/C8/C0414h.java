@@ -1,0 +1,20 @@
+package C8;
+
+import w7.InterfaceC3487a;
+
+/* JADX INFO: renamed from: C8.h, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes2.dex */
+class C0414h implements InterfaceC3487a {
+
+    /* JADX INFO: renamed from: g, reason: collision with root package name */
+    private final AbstractC0430p f651g;
+
+    public C0414h(AbstractC0430p abstractC0430p) {
+        this.f651g = abstractC0430p;
+    }
+
+    @Override // w7.InterfaceC3487a
+    public Object invoke() {
+        return AbstractC0430p.z(this.f651g);
+    }
+}

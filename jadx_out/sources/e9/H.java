@@ -1,0 +1,11 @@
+package e9;
+
+/* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+/* JADX INFO: loaded from: classes2.dex */
+public interface H {
+    boolean c(t9.k kVar);
+
+    boolean d(int i10, String str);
+
+    boolean send(String str);
+}

@@ -1,0 +1,31 @@
+==> 000001dd: <LoadConstInt>: <Reg8: 4, Imm32: 65536>
+==> 000001e3: <StoreNPToEnvironment>: <Reg8: 2, UInt8: 7, Reg8: 4>
+==> 000001e7: <StoreNPToEnvironment>: <Reg8: 2, UInt8: 8, Reg8: 3>
+==> 000001eb: <StoreNPToEnvironment>: <Reg8: 2, UInt8: 9, Reg8: 1>
+==> 000001ef: <LoadConstUInt8>: <Reg8: 1, UInt8: 32>
+==> 000001f2: <StoreNPToEnvironment>: <Reg8: 2, UInt8: 10, Reg8: 1>
+==> 000001f6: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 67685>  # String: 'dek_salt' (String)
+==> 000001fc: <StoreToEnvironment>: <Reg8: 2, UInt8: 11, Reg8: 1>
+==> 00000200: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 67351>  # String: 'dek_canary' (String)
+==> 00000206: <StoreToEnvironment>: <Reg8: 2, UInt8: 12, Reg8: 1>
+==> 0000020a: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 76193>  # String: 'OV_VERIFY_v1' (String)
+==> 00000210: <StoreToEnvironment>: <Reg8: 2, UInt8: 13, Reg8: 1>
+==> 00000214: <LoadConstStringLongIndex>: <Reg8: 1, string_id: 69742>  # String: 'OV_DEK_v1' (String)
+==> 0000021a: <StoreToEnvironment>: <Reg8: 2, UInt8: 14, Reg8: 1>
+==> 0000021e: <CreateClosure>: <Reg8: 1, Reg8: 2, function_id: 14628>  # Function: [#14628 argon2idDerive of 51 bytes]: 3 params @ offset 0x006c6df6
+==> 00000223: <StoreToEnvironment>: <Reg8: 2, UInt8: 15, Reg8: 1>
+==> 00000227: <CreateClosure>: <Reg8: 1, Reg8: 2, function_id: 14631>  # Function: [#14631 hkdfSha256 of 216 bytes]: 3 params @ offset 0x006c6ee2
+==> 0000022c: <StoreToEnvironment>: <Reg8: 2, UInt8: 16, Reg8: 1>
+==> 00000230: <CreateClosure>: <Reg8: 1, Reg8: 2, function_id: 14632>  # Function: [#14632  of 37 bytes]: 1 params @ offset 0x006c6fba
+==> 00000235: <Call1>: <Reg8: 1, Reg8: 1, Reg8: 0>
+==> 00000239: <StoreToEnvironment>: <Reg8: 2, UInt8: 17, Reg8: 1>
+==> 0000023d: <CreateClosure>: <Reg8: 1, Reg8: 2, function_id: 14636>  # Function: [#14636 createCanary of 194 bytes]: 2 params @ offset 0x006c7029
+==> 00000242: <StoreToEnvironment>: <Reg8: 2, UInt8: 18, Reg8: 1>
+==> 00000246: <CreateClosure>: <Reg8: 1, Reg8: 2, function_id: 14637>  # Function: [#14637 verifyCanary of 208 bytes]: 3 params @ offset 0x006c70eb
+==> 0000024b: <StoreToEnvironment>: <Reg8: 2, UInt8: 19, Reg8: 1>
+==> 0000024f: <CreateClosure>: <Reg8: 1, Reg8: 2, function_id: 14638>  # Function: [#14638 encryptContactKey of 193 bytes]: 3 params @ offset 0x006c71bb
+==> 00000254: <StoreToEnvironment>: <Reg8: 2, UInt8: 20, Reg8: 1>
+==> 00000258: <CreateClosure>: <Reg8: 1, Reg8: 2, function_id: 14639>  # Function: [#14639 decryptContactKey of 191 bytes]: 3 params @ offset 0x006c727c
+==> 0000025d: <StoreToEnvironment>: <Reg8: 2, UInt8: 21, Reg8: 1>
+==> 00000261: <CreateClosure>: <Reg8: 1, Reg8: 2, function_id: 14640>  # Function: [#14640  of 37 bytes]: 1 params @ offset 0x006c733b
+==> 00000266: <Call1>: <Reg8: 1, Reg8: 1, Reg8: 0>

@@ -1,0 +1,117 @@
+package com.facebook.react.common.mapbuffer;
+
+import B7.c;
+import com.facebook.react.uimanager.events.PointerEventHelper;
+import expo.modules.notifications.service.NotificationsService;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.enums.EnumEntries;
+import p7.AbstractC3083a;
+import x7.InterfaceC3550a;
+
+/* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0010\u001c\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u0006\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0004\bf\u0018\u0000 \u001a2\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0003\u001a\u001b\u001cJ\u0010\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u0004H&J\u0010\u0010\n\u001a\u00020\u00042\u0006\u0010\t\u001a\u00020\u0004H&J\u0010\u0010\u000b\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u0004H&J\u0010\u0010\r\u001a\u00020\u000e2\u0006\u0010\t\u001a\u00020\u0004H&J\u0010\u0010\u000f\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u0004H&J\u0010\u0010\u0010\u001a\u00020\u00042\u0006\u0010\t\u001a\u00020\u0004H&J\u0010\u0010\u0011\u001a\u00020\u00122\u0006\u0010\t\u001a\u00020\u0004H&J\u0010\u0010\u0013\u001a\u00020\u00142\u0006\u0010\t\u001a\u00020\u0004H&J\u0010\u0010\u0015\u001a\u00020\u00162\u0006\u0010\t\u001a\u00020\u0004H&J\u0010\u0010\u0017\u001a\u00020\u00002\u0006\u0010\t\u001a\u00020\u0004H&J\u0016\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00000\u00192\u0006\u0010\t\u001a\u00020\u0004H&R\u0012\u0010\u0003\u001a\u00020\u0004X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006ø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001¨\u0006\u001dÀ\u0006\u0001"}, d2 = {"Lcom/facebook/react/common/mapbuffer/MapBuffer;", PointerEventHelper.POINTER_TYPE_UNKNOWN, "Lcom/facebook/react/common/mapbuffer/MapBuffer$Entry;", "count", PointerEventHelper.POINTER_TYPE_UNKNOWN, "getCount", "()I", "contains", PointerEventHelper.POINTER_TYPE_UNKNOWN, "key", "getKeyOffset", "entryAt", "offset", "getType", "Lcom/facebook/react/common/mapbuffer/MapBuffer$DataType;", "getBoolean", "getInt", "getLong", PointerEventHelper.POINTER_TYPE_UNKNOWN, "getDouble", PointerEventHelper.POINTER_TYPE_UNKNOWN, "getString", PointerEventHelper.POINTER_TYPE_UNKNOWN, "getMapBuffer", "getMapBufferList", PointerEventHelper.POINTER_TYPE_UNKNOWN, "Companion", "DataType", "Entry", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+public interface MapBuffer extends Iterable<Entry>, InterfaceC3550a {
+
+    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = Companion.$$INSTANCE;
+
+    /* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+    @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u001a\u0010\u0005\u001a\u00020\u00048\u0000X\u0080\u0004¢\u0006\f\n\u0004\b\u0005\u0010\u0006\u001a\u0004\b\u0007\u0010\b¨\u0006\t"}, d2 = {"Lcom/facebook/react/common/mapbuffer/MapBuffer$Companion;", PointerEventHelper.POINTER_TYPE_UNKNOWN, "<init>", "()V", "LB7/c;", "KEY_RANGE", "LB7/c;", "getKEY_RANGE$ReactAndroid_release", "()LB7/c;", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+    public static final class Companion {
+        static final /* synthetic */ Companion $$INSTANCE = new Companion();
+        private static final c KEY_RANGE = new c(0, 65535);
+
+        private Companion() {
+        }
+
+        public final c getKEY_RANGE$ReactAndroid_release() {
+            return KEY_RANGE;
+        }
+    }
+
+    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+    @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\t\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\t¨\u0006\n"}, d2 = {"Lcom/facebook/react/common/mapbuffer/MapBuffer$DataType;", PointerEventHelper.POINTER_TYPE_UNKNOWN, "<init>", "(Ljava/lang/String;I)V", "BOOL", "INT", "DOUBLE", "STRING", "MAP", "LONG", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+    public static final class DataType {
+        private static final /* synthetic */ EnumEntries $ENTRIES;
+        private static final /* synthetic */ DataType[] $VALUES;
+        public static final DataType BOOL = new DataType("BOOL", 0);
+        public static final DataType INT = new DataType("INT", 1);
+        public static final DataType DOUBLE = new DataType("DOUBLE", 2);
+        public static final DataType STRING = new DataType("STRING", 3);
+        public static final DataType MAP = new DataType("MAP", 4);
+        public static final DataType LONG = new DataType("LONG", 5);
+
+        private static final /* synthetic */ DataType[] $values() {
+            return new DataType[]{BOOL, INT, DOUBLE, STRING, MAP, LONG};
+        }
+
+        static {
+            DataType[] dataTypeArr$values = $values();
+            $VALUES = dataTypeArr$values;
+            $ENTRIES = AbstractC3083a.a(dataTypeArr$values);
+        }
+
+        private DataType(String str, int i10) {
+        }
+
+        public static EnumEntries getEntries() {
+            return $ENTRIES;
+        }
+
+        public static DataType valueOf(String str) {
+            return (DataType) Enum.valueOf(DataType.class, str);
+        }
+
+        public static DataType[] values() {
+            return (DataType[]) $VALUES.clone();
+        }
+    }
+
+    /* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+    @Metadata(d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u0006\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\bf\u0018\u00002\u00020\u0001R\u0012\u0010\u0002\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005R\u0012\u0010\u0006\u001a\u00020\u0007X¦\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tR\u0012\u0010\n\u001a\u00020\u000bX¦\u0004¢\u0006\u0006\u001a\u0004\b\f\u0010\rR\u0012\u0010\u000e\u001a\u00020\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0005R\u0012\u0010\u0010\u001a\u00020\u0011X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0012\u0010\u0013R\u0012\u0010\u0014\u001a\u00020\u0015X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0016\u0010\u0017R\u0012\u0010\u0018\u001a\u00020\u0019X¦\u0004¢\u0006\u0006\u001a\u0004\b\u001a\u0010\u001bR\u0012\u0010\u001c\u001a\u00020\u001dX¦\u0004¢\u0006\u0006\u001a\u0004\b\u001e\u0010\u001fø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001¨\u0006 À\u0006\u0001"}, d2 = {"Lcom/facebook/react/common/mapbuffer/MapBuffer$Entry;", PointerEventHelper.POINTER_TYPE_UNKNOWN, "key", PointerEventHelper.POINTER_TYPE_UNKNOWN, "getKey", "()I", NotificationsService.EVENT_TYPE_KEY, "Lcom/facebook/react/common/mapbuffer/MapBuffer$DataType;", "getType", "()Lcom/facebook/react/common/mapbuffer/MapBuffer$DataType;", "booleanValue", PointerEventHelper.POINTER_TYPE_UNKNOWN, "getBooleanValue", "()Z", "intValue", "getIntValue", "longValue", PointerEventHelper.POINTER_TYPE_UNKNOWN, "getLongValue", "()J", "doubleValue", PointerEventHelper.POINTER_TYPE_UNKNOWN, "getDoubleValue", "()D", "stringValue", PointerEventHelper.POINTER_TYPE_UNKNOWN, "getStringValue", "()Ljava/lang/String;", "mapBufferValue", "Lcom/facebook/react/common/mapbuffer/MapBuffer;", "getMapBufferValue", "()Lcom/facebook/react/common/mapbuffer/MapBuffer;", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+    public interface Entry {
+        boolean getBooleanValue();
+
+        double getDoubleValue();
+
+        int getIntValue();
+
+        int getKey();
+
+        long getLongValue();
+
+        MapBuffer getMapBufferValue();
+
+        String getStringValue();
+
+        DataType getType();
+    }
+
+    boolean contains(int key);
+
+    Entry entryAt(int offset);
+
+    boolean getBoolean(int key);
+
+    int getCount();
+
+    double getDouble(int key);
+
+    int getInt(int key);
+
+    int getKeyOffset(int key);
+
+    long getLong(int key);
+
+    MapBuffer getMapBuffer(int key);
+
+    List<MapBuffer> getMapBufferList(int key);
+
+    String getString(int key);
+
+    DataType getType(int key);
+}

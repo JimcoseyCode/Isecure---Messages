@@ -1,0 +1,13 @@
+package I4;
+
+/* JADX INFO: renamed from: I4.p, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class AbstractC0972p extends AbstractC0961o {
+    public static boolean a(Object obj, Object obj2) {
+        if (obj != obj2) {
+            return obj != null && obj.equals(obj2);
+        }
+        return true;
+    }
+}

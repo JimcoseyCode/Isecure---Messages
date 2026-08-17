@@ -1,0 +1,20 @@
+package C8;
+
+import kotlin.jvm.functions.Function1;
+
+/* JADX INFO: renamed from: C8.k, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes2.dex */
+class C0420k implements Function1 {
+
+    /* JADX INFO: renamed from: g, reason: collision with root package name */
+    private final AbstractC0430p f656g;
+
+    public C0420k(AbstractC0430p abstractC0430p) {
+        this.f656g = abstractC0430p;
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    public Object invoke(Object obj) {
+        return AbstractC0430p.C(this.f656g, (v0) obj);
+    }
+}

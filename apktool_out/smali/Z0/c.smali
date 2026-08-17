@@ -1,0 +1,1550 @@
+.class public final LZ0/c;
+.super Ljava/lang/Object;
+.source "r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        LZ0/c$a;,
+        LZ0/c$b;,
+        LZ0/c$c;
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:LZ0/c;
+
+.field private static b:LZ0/c$c;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, LZ0/c;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, LZ0/c;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LZ0/c;->a:LZ0/c;
+
+    .line 7
+    .line 8
+    sget-object v0, LZ0/c$c;->d:LZ0/c$c;
+
+    .line 9
+    .line 10
+    sput-object v0, LZ0/c;->b:LZ0/c$c;
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic a(Ljava/lang/String;LZ0/m;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, LZ0/c;->d(Ljava/lang/String;LZ0/m;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private final b(Landroidx/fragment/app/Fragment;)LZ0/c$c;
+    .locals 2
+
+    .line 1
+    :goto_0
+    if-eqz p1, :cond_1
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->isAdded()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getParentFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    const-string v1, "declaringFragment.parentFragmentManager"
+
+    .line 14
+    .line 15
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/l;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->C0()LZ0/c$c;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v1
+
+    .line 22
+    if-eqz v1, :cond_0
+
+    .line 23
+    .line 24
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->C0()LZ0/c$c;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    invoke-static {p1}, Lkotlin/jvm/internal/l;->d(Ljava/lang/Object;)V
+
+    .line 29
+    .line 30
+    .line 31
+    return-object p1
+
+    .line 32
+    :cond_0
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getParentFragment()Landroidx/fragment/app/Fragment;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    goto :goto_0
+
+    .line 37
+    :cond_1
+    sget-object p1, LZ0/c;->b:LZ0/c$c;
+
+    .line 38
+    .line 39
+    return-object p1
+.end method
+
+.method private final c(LZ0/c$c;LZ0/m;)V
+    .locals 4
+
+    .line 1
+    invoke-virtual {p2}, LZ0/m;->a()Landroidx/fragment/app/Fragment;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-virtual {p1}, LZ0/c$c;->a()Ljava/util/Set;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v2
+
+    .line 17
+    sget-object v3, LZ0/c$a;->g:LZ0/c$a;
+
+    .line 18
+    .line 19
+    invoke-interface {v2, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {p1}, LZ0/c$c;->b()LZ0/c$b;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {p1}, LZ0/c$c;->a()Ljava/util/Set;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p1
+
+    .line 29
+    sget-object v2, LZ0/c$a;->h:LZ0/c$a;
+
+    .line 30
+    .line 31
+    invoke-interface {p1, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result p1
+
+    .line 35
+    if-eqz p1, :cond_0
+
+    .line 36
+    .line 37
+    new-instance p1, LZ0/b;
+
+    .line 38
+    .line 39
+    invoke-direct {p1, v1, p2}, LZ0/b;-><init>(Ljava/lang/String;LZ0/m;)V
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-direct {p0, v0, p1}, LZ0/c;->p(Landroidx/fragment/app/Fragment;Ljava/lang/Runnable;)V
+
+    .line 43
+    .line 44
+    .line 45
+    :cond_0
+    return-void
+.end method
+
+.method private static final d(Ljava/lang/String;LZ0/m;)V
+    .locals 0
+
+    .line 1
+    const-string p0, "$violation"
+
+    .line 2
+    .line 3
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
+
+.method private final e(LZ0/m;)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x3
+
+    .line 2
+    invoke-static {v0}, Landroidx/fragment/app/FragmentManager;->J0(I)Z
+
+    .line 3
+    .line 4
+    .line 5
+    move-result v0
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, LZ0/m;->a()Landroidx/fragment/app/Fragment;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    .line 15
+    :cond_0
+    return-void
+.end method
+
+.method public static final f(Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    .locals 4
+
+    .line 1
+    const-string v0, "fragment"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "previousFragmentId"
+
+    .line 7
+    .line 8
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance v0, LZ0/a;
+
+    .line 12
+    .line 13
+    invoke-direct {v0, p0, p1}, LZ0/a;-><init>(Landroidx/fragment/app/Fragment;Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    sget-object p1, LZ0/c;->a:LZ0/c;
+
+    .line 17
+    .line 18
+    invoke-direct {p1, v0}, LZ0/c;->e(LZ0/m;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-direct {p1, p0}, LZ0/c;->b(Landroidx/fragment/app/Fragment;)LZ0/c$c;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v1
+
+    .line 25
+    invoke-virtual {v1}, LZ0/c$c;->a()Ljava/util/Set;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v2
+
+    .line 29
+    sget-object v3, LZ0/c$a;->i:LZ0/c$a;
+
+    .line 30
+    .line 31
+    invoke-interface {v2, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v2
+
+    .line 35
+    if-eqz v2, :cond_0
+
+    .line 36
+    .line 37
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p0
+
+    .line 41
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v2
+
+    .line 45
+    invoke-direct {p1, v1, p0, v2}, LZ0/c;->q(LZ0/c$c;Ljava/lang/Class;Ljava/lang/Class;)Z
+
+    .line 46
+    .line 47
+    .line 48
+    move-result p0
+
+    .line 49
+    if-eqz p0, :cond_0
+
+    .line 50
+    .line 51
+    invoke-direct {p1, v1, v0}, LZ0/c;->c(LZ0/c$c;LZ0/m;)V
+
+    .line 52
+    .line 53
+    .line 54
+    :cond_0
+    return-void
+.end method
+
+.method public static final g(Landroidx/fragment/app/Fragment;Landroid/view/ViewGroup;)V
+    .locals 4
+
+    .line 1
+    const-string v0, "fragment"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, LZ0/d;
+
+    .line 7
+    .line 8
+    invoke-direct {v0, p0, p1}, LZ0/d;-><init>(Landroidx/fragment/app/Fragment;Landroid/view/ViewGroup;)V
+
+    .line 9
+    .line 10
+    .line 11
+    sget-object p1, LZ0/c;->a:LZ0/c;
+
+    .line 12
+    .line 13
+    invoke-direct {p1, v0}, LZ0/c;->e(LZ0/m;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-direct {p1, p0}, LZ0/c;->b(Landroidx/fragment/app/Fragment;)LZ0/c$c;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    invoke-virtual {v1}, LZ0/c$c;->a()Ljava/util/Set;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v2
+
+    .line 24
+    sget-object v3, LZ0/c$a;->j:LZ0/c$a;
+
+    .line 25
+    .line 26
+    invoke-interface {v2, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v2
+
+    .line 30
+    if-eqz v2, :cond_0
+
+    .line 31
+    .line 32
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v2
+
+    .line 40
+    invoke-direct {p1, v1, p0, v2}, LZ0/c;->q(LZ0/c$c;Ljava/lang/Class;Ljava/lang/Class;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result p0
+
+    .line 44
+    if-eqz p0, :cond_0
+
+    .line 45
+    .line 46
+    invoke-direct {p1, v1, v0}, LZ0/c;->c(LZ0/c$c;LZ0/m;)V
+
+    .line 47
+    .line 48
+    .line 49
+    :cond_0
+    return-void
+.end method
+
+.method public static final h(Landroidx/fragment/app/Fragment;)V
+    .locals 5
+
+    .line 1
+    const-string v0, "fragment"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, LZ0/e;
+
+    .line 7
+    .line 8
+    invoke-direct {v0, p0}, LZ0/e;-><init>(Landroidx/fragment/app/Fragment;)V
+
+    .line 9
+    .line 10
+    .line 11
+    sget-object v1, LZ0/c;->a:LZ0/c;
+
+    .line 12
+    .line 13
+    invoke-direct {v1, v0}, LZ0/c;->e(LZ0/m;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-direct {v1, p0}, LZ0/c;->b(Landroidx/fragment/app/Fragment;)LZ0/c$c;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v2
+
+    .line 20
+    invoke-virtual {v2}, LZ0/c$c;->a()Ljava/util/Set;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v3
+
+    .line 24
+    sget-object v4, LZ0/c$a;->l:LZ0/c$a;
+
+    .line 25
+    .line 26
+    invoke-interface {v3, v4}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v3
+
+    .line 30
+    if-eqz v3, :cond_0
+
+    .line 31
+    .line 32
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v3
+
+    .line 40
+    invoke-direct {v1, v2, p0, v3}, LZ0/c;->q(LZ0/c$c;Ljava/lang/Class;Ljava/lang/Class;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result p0
+
+    .line 44
+    if-eqz p0, :cond_0
+
+    .line 45
+    .line 46
+    invoke-direct {v1, v2, v0}, LZ0/c;->c(LZ0/c$c;LZ0/m;)V
+
+    .line 47
+    .line 48
+    .line 49
+    :cond_0
+    return-void
+.end method
+
+.method public static final i(Landroidx/fragment/app/Fragment;)V
+    .locals 5
+
+    .line 1
+    const-string v0, "fragment"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, LZ0/f;
+
+    .line 7
+    .line 8
+    invoke-direct {v0, p0}, LZ0/f;-><init>(Landroidx/fragment/app/Fragment;)V
+
+    .line 9
+    .line 10
+    .line 11
+    sget-object v1, LZ0/c;->a:LZ0/c;
+
+    .line 12
+    .line 13
+    invoke-direct {v1, v0}, LZ0/c;->e(LZ0/m;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-direct {v1, p0}, LZ0/c;->b(Landroidx/fragment/app/Fragment;)LZ0/c$c;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v2
+
+    .line 20
+    invoke-virtual {v2}, LZ0/c$c;->a()Ljava/util/Set;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v3
+
+    .line 24
+    sget-object v4, LZ0/c$a;->n:LZ0/c$a;
+
+    .line 25
+    .line 26
+    invoke-interface {v3, v4}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v3
+
+    .line 30
+    if-eqz v3, :cond_0
+
+    .line 31
+    .line 32
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v3
+
+    .line 40
+    invoke-direct {v1, v2, p0, v3}, LZ0/c;->q(LZ0/c$c;Ljava/lang/Class;Ljava/lang/Class;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result p0
+
+    .line 44
+    if-eqz p0, :cond_0
+
+    .line 45
+    .line 46
+    invoke-direct {v1, v2, v0}, LZ0/c;->c(LZ0/c$c;LZ0/m;)V
+
+    .line 47
+    .line 48
+    .line 49
+    :cond_0
+    return-void
+.end method
+
+.method public static final j(Landroidx/fragment/app/Fragment;)V
+    .locals 5
+
+    .line 1
+    const-string v0, "fragment"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, LZ0/g;
+
+    .line 7
+    .line 8
+    invoke-direct {v0, p0}, LZ0/g;-><init>(Landroidx/fragment/app/Fragment;)V
+
+    .line 9
+    .line 10
+    .line 11
+    sget-object v1, LZ0/c;->a:LZ0/c;
+
+    .line 12
+    .line 13
+    invoke-direct {v1, v0}, LZ0/c;->e(LZ0/m;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-direct {v1, p0}, LZ0/c;->b(Landroidx/fragment/app/Fragment;)LZ0/c$c;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v2
+
+    .line 20
+    invoke-virtual {v2}, LZ0/c$c;->a()Ljava/util/Set;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v3
+
+    .line 24
+    sget-object v4, LZ0/c$a;->n:LZ0/c$a;
+
+    .line 25
+    .line 26
+    invoke-interface {v3, v4}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v3
+
+    .line 30
+    if-eqz v3, :cond_0
+
+    .line 31
+    .line 32
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v3
+
+    .line 40
+    invoke-direct {v1, v2, p0, v3}, LZ0/c;->q(LZ0/c$c;Ljava/lang/Class;Ljava/lang/Class;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result p0
+
+    .line 44
+    if-eqz p0, :cond_0
+
+    .line 45
+    .line 46
+    invoke-direct {v1, v2, v0}, LZ0/c;->c(LZ0/c$c;LZ0/m;)V
+
+    .line 47
+    .line 48
+    .line 49
+    :cond_0
+    return-void
+.end method
+
+.method public static final k(Landroidx/fragment/app/Fragment;)V
+    .locals 5
+
+    .line 1
+    const-string v0, "fragment"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, LZ0/i;
+
+    .line 7
+    .line 8
+    invoke-direct {v0, p0}, LZ0/i;-><init>(Landroidx/fragment/app/Fragment;)V
+
+    .line 9
+    .line 10
+    .line 11
+    sget-object v1, LZ0/c;->a:LZ0/c;
+
+    .line 12
+    .line 13
+    invoke-direct {v1, v0}, LZ0/c;->e(LZ0/m;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-direct {v1, p0}, LZ0/c;->b(Landroidx/fragment/app/Fragment;)LZ0/c$c;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v2
+
+    .line 20
+    invoke-virtual {v2}, LZ0/c$c;->a()Ljava/util/Set;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v3
+
+    .line 24
+    sget-object v4, LZ0/c$a;->l:LZ0/c$a;
+
+    .line 25
+    .line 26
+    invoke-interface {v3, v4}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v3
+
+    .line 30
+    if-eqz v3, :cond_0
+
+    .line 31
+    .line 32
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v3
+
+    .line 40
+    invoke-direct {v1, v2, p0, v3}, LZ0/c;->q(LZ0/c$c;Ljava/lang/Class;Ljava/lang/Class;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result p0
+
+    .line 44
+    if-eqz p0, :cond_0
+
+    .line 45
+    .line 46
+    invoke-direct {v1, v2, v0}, LZ0/c;->c(LZ0/c$c;LZ0/m;)V
+
+    .line 47
+    .line 48
+    .line 49
+    :cond_0
+    return-void
+.end method
+
+.method public static final l(Landroidx/fragment/app/Fragment;Landroidx/fragment/app/Fragment;I)V
+    .locals 3
+
+    .line 1
+    const-string v0, "violatingFragment"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "targetFragment"
+
+    .line 7
+    .line 8
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance v0, LZ0/j;
+
+    .line 12
+    .line 13
+    invoke-direct {v0, p0, p1, p2}, LZ0/j;-><init>(Landroidx/fragment/app/Fragment;Landroidx/fragment/app/Fragment;I)V
+
+    .line 14
+    .line 15
+    .line 16
+    sget-object p1, LZ0/c;->a:LZ0/c;
+
+    .line 17
+    .line 18
+    invoke-direct {p1, v0}, LZ0/c;->e(LZ0/m;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-direct {p1, p0}, LZ0/c;->b(Landroidx/fragment/app/Fragment;)LZ0/c$c;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p2
+
+    .line 25
+    invoke-virtual {p2}, LZ0/c$c;->a()Ljava/util/Set;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    sget-object v2, LZ0/c$a;->n:LZ0/c$a;
+
+    .line 30
+    .line 31
+    invoke-interface {v1, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v1
+
+    .line 35
+    if-eqz v1, :cond_0
+
+    .line 36
+    .line 37
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p0
+
+    .line 41
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v1
+
+    .line 45
+    invoke-direct {p1, p2, p0, v1}, LZ0/c;->q(LZ0/c$c;Ljava/lang/Class;Ljava/lang/Class;)Z
+
+    .line 46
+    .line 47
+    .line 48
+    move-result p0
+
+    .line 49
+    if-eqz p0, :cond_0
+
+    .line 50
+    .line 51
+    invoke-direct {p1, p2, v0}, LZ0/c;->c(LZ0/c$c;LZ0/m;)V
+
+    .line 52
+    .line 53
+    .line 54
+    :cond_0
+    return-void
+.end method
+
+.method public static final m(Landroidx/fragment/app/Fragment;Z)V
+    .locals 4
+
+    .line 1
+    const-string v0, "fragment"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, LZ0/k;
+
+    .line 7
+    .line 8
+    invoke-direct {v0, p0, p1}, LZ0/k;-><init>(Landroidx/fragment/app/Fragment;Z)V
+
+    .line 9
+    .line 10
+    .line 11
+    sget-object p1, LZ0/c;->a:LZ0/c;
+
+    .line 12
+    .line 13
+    invoke-direct {p1, v0}, LZ0/c;->e(LZ0/m;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-direct {p1, p0}, LZ0/c;->b(Landroidx/fragment/app/Fragment;)LZ0/c$c;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    invoke-virtual {v1}, LZ0/c$c;->a()Ljava/util/Set;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v2
+
+    .line 24
+    sget-object v3, LZ0/c$a;->m:LZ0/c$a;
+
+    .line 25
+    .line 26
+    invoke-interface {v2, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v2
+
+    .line 30
+    if-eqz v2, :cond_0
+
+    .line 31
+    .line 32
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v2
+
+    .line 40
+    invoke-direct {p1, v1, p0, v2}, LZ0/c;->q(LZ0/c$c;Ljava/lang/Class;Ljava/lang/Class;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result p0
+
+    .line 44
+    if-eqz p0, :cond_0
+
+    .line 45
+    .line 46
+    invoke-direct {p1, v1, v0}, LZ0/c;->c(LZ0/c$c;LZ0/m;)V
+
+    .line 47
+    .line 48
+    .line 49
+    :cond_0
+    return-void
+.end method
+
+.method public static final n(Landroidx/fragment/app/Fragment;Landroid/view/ViewGroup;)V
+    .locals 4
+
+    .line 1
+    const-string v0, "fragment"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "container"
+
+    .line 7
+    .line 8
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance v0, LZ0/n;
+
+    .line 12
+    .line 13
+    invoke-direct {v0, p0, p1}, LZ0/n;-><init>(Landroidx/fragment/app/Fragment;Landroid/view/ViewGroup;)V
+
+    .line 14
+    .line 15
+    .line 16
+    sget-object p1, LZ0/c;->a:LZ0/c;
+
+    .line 17
+    .line 18
+    invoke-direct {p1, v0}, LZ0/c;->e(LZ0/m;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-direct {p1, p0}, LZ0/c;->b(Landroidx/fragment/app/Fragment;)LZ0/c$c;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v1
+
+    .line 25
+    invoke-virtual {v1}, LZ0/c$c;->a()Ljava/util/Set;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v2
+
+    .line 29
+    sget-object v3, LZ0/c$a;->o:LZ0/c$a;
+
+    .line 30
+    .line 31
+    invoke-interface {v2, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v2
+
+    .line 35
+    if-eqz v2, :cond_0
+
+    .line 36
+    .line 37
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p0
+
+    .line 41
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v2
+
+    .line 45
+    invoke-direct {p1, v1, p0, v2}, LZ0/c;->q(LZ0/c$c;Ljava/lang/Class;Ljava/lang/Class;)Z
+
+    .line 46
+    .line 47
+    .line 48
+    move-result p0
+
+    .line 49
+    if-eqz p0, :cond_0
+
+    .line 50
+    .line 51
+    invoke-direct {p1, v1, v0}, LZ0/c;->c(LZ0/c$c;LZ0/m;)V
+
+    .line 52
+    .line 53
+    .line 54
+    :cond_0
+    return-void
+.end method
+
+.method public static final o(Landroidx/fragment/app/Fragment;Landroidx/fragment/app/Fragment;I)V
+    .locals 3
+
+    .line 1
+    const-string v0, "fragment"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "expectedParentFragment"
+
+    .line 7
+    .line 8
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance v0, LZ0/o;
+
+    .line 12
+    .line 13
+    invoke-direct {v0, p0, p1, p2}, LZ0/o;-><init>(Landroidx/fragment/app/Fragment;Landroidx/fragment/app/Fragment;I)V
+
+    .line 14
+    .line 15
+    .line 16
+    sget-object p1, LZ0/c;->a:LZ0/c;
+
+    .line 17
+    .line 18
+    invoke-direct {p1, v0}, LZ0/c;->e(LZ0/m;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-direct {p1, p0}, LZ0/c;->b(Landroidx/fragment/app/Fragment;)LZ0/c$c;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p2
+
+    .line 25
+    invoke-virtual {p2}, LZ0/c$c;->a()Ljava/util/Set;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    sget-object v2, LZ0/c$a;->k:LZ0/c$a;
+
+    .line 30
+    .line 31
+    invoke-interface {v1, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v1
+
+    .line 35
+    if-eqz v1, :cond_0
+
+    .line 36
+    .line 37
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p0
+
+    .line 41
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v1
+
+    .line 45
+    invoke-direct {p1, p2, p0, v1}, LZ0/c;->q(LZ0/c$c;Ljava/lang/Class;Ljava/lang/Class;)Z
+
+    .line 46
+    .line 47
+    .line 48
+    move-result p0
+
+    .line 49
+    if-eqz p0, :cond_0
+
+    .line 50
+    .line 51
+    invoke-direct {p1, p2, v0}, LZ0/c;->c(LZ0/c$c;LZ0/m;)V
+
+    .line 52
+    .line 53
+    .line 54
+    :cond_0
+    return-void
+.end method
+
+.method private final p(Landroidx/fragment/app/Fragment;Ljava/lang/Runnable;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->isAdded()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_1
+
+    .line 6
+    .line 7
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getParentFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-virtual {p1}, Landroidx/fragment/app/FragmentManager;->w0()Landroidx/fragment/app/v;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    invoke-virtual {p1}, Landroidx/fragment/app/v;->g()Landroid/os/Handler;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    const-string v0, "fragment.parentFragmentManager.host.handler"
+
+    .line 20
+    .line 21
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {p1}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v0
+
+    .line 28
+    invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v1
+
+    .line 32
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/l;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v0
+
+    .line 36
+    if-eqz v0, :cond_0
+
+    .line 37
+    .line 38
+    invoke-interface {p2}, Ljava/lang/Runnable;->run()V
+
+    .line 39
+    .line 40
+    .line 41
+    return-void
+
+    .line 42
+    :cond_0
+    invoke-virtual {p1, p2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    .line 43
+    .line 44
+    .line 45
+    return-void
+
+    .line 46
+    :cond_1
+    invoke-interface {p2}, Ljava/lang/Runnable;->run()V
+
+    .line 47
+    .line 48
+    .line 49
+    return-void
+.end method
+
+.method private final q(LZ0/c$c;Ljava/lang/Class;Ljava/lang/Class;)Z
+    .locals 2
+
+    .line 1
+    invoke-virtual {p2}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p2
+
+    .line 5
+    invoke-virtual {p1}, LZ0/c$c;->c()Ljava/util/Map;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    invoke-interface {p1, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    check-cast p1, Ljava/util/Set;
+
+    .line 14
+    .line 15
+    const/4 p2, 0x1
+
+    .line 16
+    if-nez p1, :cond_0
+
+    .line 17
+    .line 18
+    return p2
+
+    .line 19
+    :cond_0
+    invoke-virtual {p3}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v0
+
+    .line 23
+    const-class v1, LZ0/m;
+
+    .line 24
+    .line 25
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/l;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v0
+
+    .line 29
+    if-nez v0, :cond_1
+
+    .line 30
+    .line 31
+    invoke-virtual {p3}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
+
+    .line 35
+    invoke-static {p1, v0}, Lj7/q;->X(Ljava/lang/Iterable;Ljava/lang/Object;)Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v0
+
+    .line 39
+    if-eqz v0, :cond_1
+
+    .line 40
+    .line 41
+    const/4 p1, 0x0
+
+    .line 42
+    return p1
+
+    .line 43
+    :cond_1
+    invoke-interface {p1, p3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 44
+    .line 45
+    .line 46
+    move-result p1
+
+    .line 47
+    xor-int/2addr p1, p2
+
+    .line 48
+    return p1
+.end method

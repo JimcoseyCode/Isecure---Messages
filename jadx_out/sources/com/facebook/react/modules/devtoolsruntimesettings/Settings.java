@@ -1,0 +1,28 @@
+package com.facebook.react.modules.devtoolsruntimesettings;
+
+import com.facebook.react.uimanager.events.PointerEventHelper;
+import kotlin.Metadata;
+
+/* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\b\b\u0002\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\u0007\"\u0004\b\f\u0010\t¨\u0006\r"}, d2 = {"Lcom/facebook/react/modules/devtoolsruntimesettings/Settings;", PointerEventHelper.POINTER_TYPE_UNKNOWN, "<init>", "()V", "shouldReloadAndProfile", PointerEventHelper.POINTER_TYPE_UNKNOWN, "getShouldReloadAndProfile", "()Z", "setShouldReloadAndProfile", "(Z)V", "recordChangeDescriptions", "getRecordChangeDescriptions", "setRecordChangeDescriptions", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+final class Settings {
+    private boolean recordChangeDescriptions;
+    private boolean shouldReloadAndProfile;
+
+    public final boolean getRecordChangeDescriptions() {
+        return this.recordChangeDescriptions;
+    }
+
+    public final boolean getShouldReloadAndProfile() {
+        return this.shouldReloadAndProfile;
+    }
+
+    public final void setRecordChangeDescriptions(boolean z10) {
+        this.recordChangeDescriptions = z10;
+    }
+
+    public final void setShouldReloadAndProfile(boolean z10) {
+        this.shouldReloadAndProfile = z10;
+    }
+}

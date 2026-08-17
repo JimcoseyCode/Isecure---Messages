@@ -1,0 +1,52 @@
+.class public abstract LP/U$b;
+.super Ljava/lang/Object;
+.source "r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = LP/U;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "b"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static c(LP/L;Ljava/util/List;)LP/U$b;
+    .locals 1
+
+    .line 1
+    new-instance v0, LP/c;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1}, LP/c;-><init>(LP/L;Ljava/util/List;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public abstract a()Ljava/util/List;
+.end method
+
+.method public abstract b()LP/L;
+.end method

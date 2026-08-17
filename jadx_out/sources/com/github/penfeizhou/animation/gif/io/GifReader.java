@@ -1,0 +1,31 @@
+package com.github.penfeizhou.animation.gif.io;
+
+import com.github.penfeizhou.animation.io.Reader;
+import com.github.penfeizhou.animation.io.c;
+import java.io.IOException;
+
+/* JADX INFO: compiled from: r8-map-id-061e463ed15b965618257332b2076f08a8430850913ea9e10e0349edf4e95e68 */
+/* JADX INFO: loaded from: classes.dex */
+public class GifReader extends c {
+    private static ThreadLocal<byte[]> __intBytes = new ThreadLocal<>();
+
+    public GifReader(Reader reader) {
+        super(reader);
+    }
+
+    private static byte[] ensureBytes() {
+        byte[] bArr = __intBytes.get();
+        if (bArr != null) {
+            return bArr;
+        }
+        byte[] bArr2 = new byte[4];
+        __intBytes.set(bArr2);
+        return bArr2;
+    }
+
+    public int readUInt16() throws IOException {
+        byte[] bArrEnsureBytes = ensureBytes();
+        read(bArrEnsureBytes, 0, 2);
+        return ((bArrEnsureBytes[1] & 255) << 8) | (bArrEnsureBytes[0] & 255);
+    }
+}
